@@ -1,16 +1,45 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Amarillo";
+    src: url('/fonts/Amarillo.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: 'Champagne';
+    src: local('/fonts/Champagne'), url('/fonts/champagne.ttf');
+    
 }
 
-* {
-  box-sizing: border-box;
+.active {
+    @apply text-black underline;
+}
+.TimesNewRoman {
+    font-family: 'Times New Roman', Times, serif;
+}
+@media only screen and (min-width: 1100px) {
+   div#mgc{
+       @apply mx-40;
+   }
+}
+@media only screen and (min-width: 1200px) {
+   div#mgc{
+       @apply mx-52;
+   }
+}
+@media only screen and (min-width: 1300px) {
+   div#mgc{
+       @apply mx-64;
+   }
+}
+@media only screen and (min-width: 768px) {
+    div#gd{
+        @apply grid;
+      grid-template-columns: .5fr 1fr;
+    }
 }
