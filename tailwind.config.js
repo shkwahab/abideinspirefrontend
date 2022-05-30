@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily:{
         Amarillo:'Amarillo,cursive',
-        Champagne:'Champagne,cursive'
+        Champagne:'Champagne,cursive',
+        Darleston:'Darleston,cursive'
       }
     },
   },

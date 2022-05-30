@@ -29,7 +29,7 @@ const SFooter = (props) => {
           <div id="pinterest" className=" w-8 mx-auto">
             <a
               title="Pinterest"
-              href="https://www.pinterest.com/abideinspire/"
+              href="https://www.pinterest.com/abideinspire"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -39,7 +39,7 @@ const SFooter = (props) => {
           <div id="instagram" className=" w-8 mx-auto">
             <a
               title="Instagram"
-              href="https://www.instagram.com/abide_inspire/ "
+              href="https://www.instagram.com/abideinspire/ "
               target="_blank"
               rel="noopener noreferrer"
             >

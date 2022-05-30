@@ -4,6 +4,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { HiMinusSm } from "react-icons/hi";
 import { useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 const About = () => {
   const [minus, setMinus] = useState(true);
@@ -44,11 +45,13 @@ const About = () => {
     setq3(!q3);
   };
 
-  const promo = () => {
-    location.href = "https://tinyurl.com/ynt2hf83";
-  };
   return (
     <>
+    <Head>
+      <title>About-Abide Inspire</title>
+      <meta name="description" content="Abide & Inspire is the Community of the Self Belief and Manifestation. We believe in the power of self-belief and manifestation.It’s no secret that what you put out into the universe is what you’ll get back. Manifestation is a real thing as long as you believe in yourself and put your mind to it." />
+      <meta name="keywords" content="inspire,above inspiration,abide,abide meditation,morning above inspiration,inspire daily,abide as the self,abide bible,abide with me,abide app meditation,tell the world about jesus,abide bible project purpose,inspirational video,inspiration,inspirational,me and my big ideas,dream big,spiritual,morning inspiration,holy spirit,stressed out,puppet ideas,christian inspiration,spirituality,bible devotions,spiritual music,dream,spiritual,spirtual,love is spirtual,spiritual baths,spiritual detox,spirtual journey promo,spiritual healer,spiritual teacher,spiritual healing,spiritual cleansing,tarot spiritual guide,spiritual healing death,spiritual enlightenment,asmr spiritual cleansing,spiritual cleansing asmr,tarot spiritual guidance,spiritual healing synonym,spiritual healing technique,mantra for spiritual awakening,law of attraction,the law of attraction,law of attraction money,law of attraction explained,law of attraction success,what is the law of attraction,law of attraction (religion),law of attraction coaching,how law of attraction works,law of attraction solutions,law of attraction technique,law of attraction meditation,the law of attraction explained,law of attraction secret,how to use the law of attraction,law of attraction new,law of attraction mind,manifestation,manifestation techniques,money manifestation,manifestation meditation,what is manifestation,manifestation methods,scripting manifestation,neville goddard manifestation,manifestation tips,963 hz manifestation,manifestation journal,power of manifestation,miracle manifestation,music for manifestation,manifestation technique,manifestation frequency,the power of manifestation,meditation manifestation,beerbiceps manifestation" />
+    </Head>
       <div id="gd" className="mx-2 sm:mx-4 md:mx-6 lg:mx-8 grid grid-cols-1 ">
         <div className=" ">
           <div className="text-center md:hidden text-4xl sm:text-5xl mt-8 TimesNewRoman">
@@ -198,16 +201,18 @@ const About = () => {
           » Get YOUR FREE Guided Meditation Now
           <span
             className="text-[#ff2dee] font-semibold cursor-pointer"
-            onClick={promo}
+            
           >
-            &nbsp;
-            {">>"}CLICK HERE TO GET NOW.
+            &nbsp;{">>"}
+            <Link href="https://tinyurl.com/ynt2hf83">
+            CLICK HERE TO GET NOW.
+            </Link>
           </span>
         </div>
         <div className="my-2 sm:my-4 italic mx-6 sm:mx-8  md:mx-32 lg:mx-48">
           » Say hi! on&nbsp;
           <span className="text-[#ff2dee] font-semibold cursor-pointer">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/abideinspire/" target="_blank" rel="noopener noreferrer">
               {`->>`}Instagram
             </a>
           </span>
@@ -216,7 +221,7 @@ const About = () => {
         <div className="my-2 sm:my-4 italic mx-6 sm:mx-8  md:mx-32 lg:mx-48">
           » Join the and follow my &nbsp;
           <span className="text-[#ff2dee] font-semibold cursor-pointer">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.pinterest.com/abideinspire" target="_blank" rel="noopener noreferrer">
               {`->>`} Pinterest.
             </a>
           </span>
@@ -328,9 +333,12 @@ const About = () => {
         Life with this book, you can
         <span
           className="text-base sm:text-xl text-[#ff2dee] font-semibold italic cursor-pointer"
-          onClick={promo}
-        >
-          {` >> `}CLICK HERE TO GET NOW.{` `}
+          
+        >{` >> `}
+          <Link href="https://tinyurl.com/ynt2hf83">
+          CLICK HERE TO GET NOW.
+          </Link>
+          {` `}
         </span>
         The book is currently available as an e-book and audiobook only. As the
         readers of the books are spread all over the world and prefer a digital
@@ -338,9 +346,11 @@ const About = () => {
         looking for the PRO version guide, than,
         <span
           className="text-base sm:text-xl text-[#ff2dee] font-semibold italic cursor-pointer"
-          onClick={promo}
         >
-          {` `}CLICK HERE.
+          {` `}
+          <Link href="https://tinyurl.com/ynt2hf83">
+          CLICK HERE.
+          </Link>
         </span>
       </div>
 
@@ -376,7 +386,7 @@ const About = () => {
         I love to hear from you. Just send message on Contact page or send me
         message on
         <span className=" text-[#ff2dee] font-semibold italic cursor-pointer ">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.pinterest.com/abideinspire" target="_blank" rel="noopener noreferrer">
             &nbsp;&nbsp;&nbsp; Pinterest&nbsp;&nbsp;&nbsp;
           </a>
         </span>
@@ -420,8 +430,11 @@ const About = () => {
           height="336"
         />
       </div>
-      <div className="TimesNewRoman text-center text-2xl font-semibold my-2 sm:my-4 sm:text-3xl md:text-4xl lg:text-5xl italic">
-        hey Gorgeous!
+      <div className="font-Darleston text-center text-5xl font-black my-2 sm:my-4  md:text-6xl  italic">
+        hey Gorgeous
+        <span className="font-sans font-thin">
+           !
+        </span>
       </div>
       <div className="my-2 sm:my-4 font-black text-center text-xl sm:text-2xl md:text-3xl  font-Champagne">
         Don't Leave Empty Handed
@@ -441,11 +454,12 @@ const About = () => {
       </div>
       <div
         className="text-center my-2 mb-8  sm:my-4 md:my-6 lg:my-8"
-        onClick={promo}
       >
+      <Link href="https://tinyurl.com/ynt2hf83">
         <button className="bg-[#2c2c2c] hover:bg-[#181818] text-white py-2 md:py-4 px-6 sm:px-8 md:px-14 lg:px-20 text-xl sm:text-2xl md:text-3xl">
           I WANT FREE GUIDE NOW
         </button>
+        </Link>
       </div>
     </>
   );

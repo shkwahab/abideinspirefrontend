@@ -15,6 +15,10 @@
     src: local('/fonts/Champagne'), url('/fonts/champagne.ttf');
     
 }
+@font-face {
+    font-family: 'Darleston';
+    src: url('/fonts/Darleston.woff2') format('woff2');
+}
 
 .active {
     @apply text-black underline;
@@ -42,4 +46,51 @@
         @apply grid;
       grid-template-columns: .5fr 1fr;
     }
+}
+
+div.post h1{
+    @apply text-2xl sm:text-3xl  lg:text-4xl my-2 md:my-4  ;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.post h2{
+    @apply text-base sm:text-xl;
+}
+div.post p{
+    @apply  text-base sm:text-xl my-1 sm:my-2 ;
+}
+div.post span.bg-pink{
+    @apply  bg-pink-300 bg-opacity-25  sm:text-xl ;
+}
+div.post img{
+    @apply  my-2 ;
+}
+.activepagination{
+  @apply bg-pink-800 text-white; 
+}
+.text-normal{
+    font-style: normal;
+}
+div#special{
+    @apply bg-pink-300 bg-opacity-25 text-xl p-2 px-4 py-4;
+}
+div#special a{
+    @apply underline;
+}
+ul.list{
+    @apply ml-4 sm:ml-6  sm:text-xl font-sans list-disc;
+}
+.heading{
+    @apply my-4 sm:my-6 md:my-10 font-sans text-center text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-bold;
+}
+div.q{
+    @apply font-bold text-xl;
+}
+div.centerimage img{
+    @apply  w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto;
+}
+.promo{
+    @apply bg-black uppercase text-white sm:py-4 sm:px-10 py-2 px-6 text-xl sm:text-2xl font-sans;
+}
+.promoblock{
+    @apply my-2 sm:my-4 text-center;
 }
