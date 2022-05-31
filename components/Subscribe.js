@@ -2,7 +2,7 @@ import React from "react";
 const Subscribe = () => {
   return (
     <>
-      <div className="text-center post mt-8S sm:mt-14 md:mt-20">
+      <div className="text-center post mt-8 sm:mt-14 md:mt-20">
         <h1>Subscribe to our Newsletter</h1>
       </div>
       <div id="newsletter" className="text-center post">
@@ -21,7 +21,7 @@ const Subscribe = () => {
                 name="EMAIL"
                 className="outline-none border-2 border-black rounded-md py-2 px-1 sm:py-4 sm:px-2 mx-auto w-[280px] sm:w[500px]  md:w-[600px] lg:w-[800px]"
                 placeholder="Enter Your Email address"
-                required=""
+                required
               />
             </div>
             <div>

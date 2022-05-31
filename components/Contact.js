@@ -9,23 +9,15 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_d95ixma",
-        "template_ijspuje",
-        form.current,
-        "WiLbFtIvphP4rOkKX"
-      )
-      .then(
-        (result) => {
+    emailjs.sendForm('service_d95ixma', 'template_ijspuje', form.current, 'WiLbFtIvphP4rOkKX')
+      .then((result) => {
           console.log(result.text);
-        },
-        (error) => {
+      }, (error) => {
           console.log(error.text);
-        }
-      );
-    e.target.reset();
+      });
+      e.target.reset();
   };
+  
   const [onsuccesmessage, setOnsuccesmessage] = useState(true);
   const onSuccesmessage= () => {
     setOnsuccesmessage(!onsuccesmessage);
@@ -81,7 +73,6 @@ const Contact = () => {
                   placeholder="First Name"
                   id="fname"
                   size="14"
-                  required
                   className="outline-none border-b-[1px] border-black py-4 px-2 font-Champagne text-xl "
                   name="fname"
                 />
@@ -91,7 +82,7 @@ const Contact = () => {
                   type="text"
                   placeholder="First Name"
                   id="fname"
-                  required
+                  
                   size="10"
                   className="outline-none border-b-[1px] border-black py-4 px-2 font-Champagne text-xl "
                   name="fname"
@@ -102,7 +93,7 @@ const Contact = () => {
                   type="text"
                   placeholder="First Name"
                   id="fname"
-                  required
+                  
                   size="8"
                   className="outline-none border-b-[1px] border-black py-4 px-2 font-Champagne text-xl "
                   name="fname"
@@ -111,7 +102,7 @@ const Contact = () => {
               <div className="block sm:hidden hover:border-[1px] border-black border-opacity-25">
                 <input
                   type="text"
-                  required
+                  
                   placeholder="First Name"
                   id="fname"
                   size="6"
@@ -122,7 +113,7 @@ const Contact = () => {
               <div className="lg:block hidden mx-4 hover:border-[1px] border-black border-opacity-25">
                 <input
                   type="text"
-                  required
+                  
                   placeholder="Last Name"
                   id="lname"
                   size="14"
@@ -133,7 +124,7 @@ const Contact = () => {
               <div className="lg:hidden md:block hidden mx-4 hover:border-[1px] border-black border-opacity-25">
                 <input
                   type="text"
-                  required
+                  
                   placeholder="Last Name"
                   id="lname"
                   size="10"
@@ -144,7 +135,7 @@ const Contact = () => {
               <div className="sm:block md:hidden hidden mx-4 hover:border-[1px] border-black border-opacity-25">
                 <input
                   type="text"
-                  required
+                  
                   placeholder="Last Name"
                   id="lname"
                   size="8"
@@ -155,7 +146,7 @@ const Contact = () => {
               <div className="sm:hidden block mx-10 hover:border-[1px] border-black border-opacity-25">
                 <input
                   type="text"
-                  required
+                  
                   placeholder="Last Name"
                   id="lname"
                   size="6"
@@ -167,7 +158,7 @@ const Contact = () => {
             <div className="lg:block w-[505px] hidden mr-10 hover:border-[1px] border-black border-opacity-25">
               <input
                 type="email"
-                required
+                
                 placeholder="Email"
                 id="email"
                 className="w-[500px] outline-none border-b-[1px]
@@ -178,7 +169,7 @@ const Contact = () => {
             <div className="lg:hidden w-[355px] md:block hidden mr-10 hover:border-[1px] border-black border-opacity-25">
               <input
                 type="email"
-                required
+                
                 placeholder="Email"
                 id="email"
                 className="w-[350px] outline-none border-b-[1px]
@@ -189,7 +180,7 @@ const Contact = () => {
             <div className="md:hidden w-[305px] sm:block hidden mr-10 hover:border-[1px] border-black border-opacity-25">
               <input
                 type="email"
-                required
+                
                 placeholder="Email"
                 id="email"
                 className="w-[300px] outline-none border-b-[1px]
@@ -200,7 +191,7 @@ const Contact = () => {
             <div className="block w-[285px] sm:hidden  hover:border-[1px] border-black border-opacity-25">
               <input
                 type="email"
-                required
+                
                 placeholder="Email"
                 id="email"
                 className="w-[280px] outline-none border-b-[1px]
@@ -212,7 +203,7 @@ const Contact = () => {
             <div className="lg:block hidden my-4">
               <textarea
                 id="message"
-                required
+                
                 cols="50"
                 rows="10"
                 placeholder="Message"
@@ -223,7 +214,7 @@ const Contact = () => {
             <div className="lg:hidden hidden md:block my-4">
               <textarea
                 id="message"
-                required
+                
                 cols="35"
                 rows="10"
                 placeholder="Message"
@@ -236,7 +227,7 @@ const Contact = () => {
                 id="message"
                 cols="28"
                 rows="10"
-                required
+                
                 placeholder="Message"
                 className="outline-none border-[1px] border-black py-2 px-4 "
                 name="message"
@@ -245,7 +236,7 @@ const Contact = () => {
             <div className="block sm:hidden my-4">
               <textarea
                 id="message"
-                required
+                
                 cols="25"
                 rows="10"
                 placeholder="Message"
