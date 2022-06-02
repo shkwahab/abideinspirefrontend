@@ -11,6 +11,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://www.abideinspire.com/blog</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://www.abideinspire.com/contact</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
@@ -53,3 +58,4 @@
     
 
 </urlset>
+ 

@@ -68,7 +68,10 @@ div.post img{
   @apply bg-pink-800 text-white; 
 }
 .text-normal{
-    font-style: normal;
+    font-style: normal; 
+}
+a {
+    text-decoration: none;
 }
 div#special{
     @apply bg-pink-300 bg-opacity-25 text-xl p-2 px-4 py-4;
